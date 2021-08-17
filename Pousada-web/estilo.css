@@ -8,9 +8,6 @@ body{
     background-color: whitesmoke;    
 }
 
-.container{
-    max-width: 1024px;
-}
 
 .topo{
     position: fixed; /* Menu fixo do site*/
@@ -78,13 +75,13 @@ span{
 
 .container-quartos{
     display: flex;
-    justify-content:space-between;
-    max-width: 1024px;
+    justify-content:space-around;    
     margin: 0 auto;
 }
 
 
 .quartos{
+    font-size: 20px;
     padding-bottom: 20px;
     border-bottom: 2px solid rgb(79, 131, 190);
     text-decoration: none;
@@ -100,8 +97,8 @@ span{
 }
 
 .quartos img{
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
 }
 .quartos:last-child{
     margin-right: 0px;
@@ -132,7 +129,7 @@ span{
 .container-rodape{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: spa;   
     background-color: rgba(34, 155, 149, 0.904);
 
 }
@@ -141,6 +138,7 @@ span{
     width: 23%;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .rodape-link{
@@ -163,4 +161,11 @@ span{
 .container-rodape a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+.rodape-copyright{   
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 14px;
+    flex-direction: row;
 }
