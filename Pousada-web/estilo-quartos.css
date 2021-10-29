@@ -1,37 +1,92 @@
-* {box-sizing: border-box;}
-
-.container-titulo{
-    text-align: center;
-    padding-top: 80px;
-
+*{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.quadro-img{
+.topo{
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
-    margin: 20px;
-    
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    border: solid 1px rgb(236, 232, 232);
 }
 
-.quartos-img{
-    height: 300px;
-    width: 450px;   
+.topo div a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+}
+.topo span{
+    color: blue;
 }
 
-.info-quarto h3{
-    padding-top: 20px;
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: rgb(60, 60, 60);
+}
+
+section div{
     text-align: center;
+    color: rgb(60, 60, 60);
+    padding-top: 100px;
 }
 
-.info-quarto ul{
+.quartos{
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
-    height: 44px;
-    margin-left:200px;
-    width: 1200px;
-    margin-bottom: 100px; 
+
 }
 
+.quartos img{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+}
+
+div ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+ul li{
+    width: 400px;
+}
+
+footer{
+    text-align: center;
+    background-color:  #1caf94;
+    color: whitesmoke;
+}
+
+.rodape{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.rodape div{
+    padding: 10px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 520px){
+    .quartos img{
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+    }
+}
